@@ -2,7 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="U2q-nc-J21">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19162"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -17,23 +17,23 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="9mv-ob-JMX" customClass="TableViewCell" customModule="MVVM_UIKit_Learning_Project" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="44.5" width="414" height="43.5"/>
+                                <rect key="frame" x="0.0" y="44.5" width="414" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="9mv-ob-JMX" id="8Mg-zV-F6D">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="1QH-4f-vQk">
-                                            <rect key="frame" x="15" y="11.5" width="384" height="20.5"/>
+                                            <rect key="frame" x="15" y="11.5" width="369" height="21"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FullName" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hAN-hK-018">
-                                                    <rect key="frame" x="0.0" y="0.0" width="71.5" height="20.5"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="71.5" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Age" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="50" translatesAutoresizingMaskIntoConstraints="NO" id="frW-5Y-G4v">
-                                                    <rect key="frame" x="354" y="0.0" width="30" height="20.5"/>
+                                                    <rect key="frame" x="339" y="0.0" width="30" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -42,9 +42,10 @@
                                         </stackView>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstItem="1QH-4f-vQk" firstAttribute="centerY" secondItem="8Mg-zV-F6D" secondAttribute="centerY" id="7OE-Wl-gxo"/>
+                                        <constraint firstItem="1QH-4f-vQk" firstAttribute="top" secondItem="8Mg-zV-F6D" secondAttribute="top" constant="11.5" id="1kf-a5-cuM"/>
                                         <constraint firstItem="1QH-4f-vQk" firstAttribute="leading" secondItem="8Mg-zV-F6D" secondAttribute="leading" constant="15" id="8fN-p5-KLC"/>
-                                        <constraint firstAttribute="trailing" secondItem="1QH-4f-vQk" secondAttribute="trailing" constant="15" id="ImB-lg-XT3"/>
+                                        <constraint firstAttribute="bottom" secondItem="1QH-4f-vQk" secondAttribute="bottom" constant="11.5" id="Aaf-yI-L9t"/>
+                                        <constraint firstAttribute="trailing" secondItem="1QH-4f-vQk" secondAttribute="trailing" constant="30" id="ImB-lg-XT3"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <inset key="separatorInset" minX="15" minY="0.0" maxX="15" maxY="0.0"/>
