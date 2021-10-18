@@ -63,7 +63,7 @@
                     </tableView>
                     <navigationItem key="navigationItem" title="Main Screen" id="7aZ-Cb-2Ff"/>
                     <connections>
-                        <segue destination="YV9-GM-AZl" kind="show" identifier="showDetail" id="VKC-Tp-R47"/>
+                        <segue destination="YV9-GM-AZl" kind="show" identifier="showDetail" id="pEE-as-HjE"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uVs-ZO-vMA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

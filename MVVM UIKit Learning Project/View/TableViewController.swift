@@ -6,7 +6,7 @@
 //
 
 import UIKit
-
+  
 class TableViewController: UITableViewController {
     
     // MARK: - Properties
@@ -37,4 +37,23 @@ class TableViewController: UITableViewController {
         return tableViewCell
     }
     
+    // MARK: - Table view delegate
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        guard let viewModel = viewModel else { return }
+        viewModel.selectRow(atIndexPath: indexPath)
+        
+        performSegue(withIdentifier: "showDetail", sender: nil)
+        
+    }
+    
+    // MARK: - Navigation
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let identifier = segue.identifier, let viewModel = viewModel else { return }
+        
+        if identifier == "showDetail" {
+            if let destinationVC = segue.destination as? DetailViewController {
+                destinationVC.viewModel = viewModel.viewModelForSelectedRow()
+            }
+        }
+    }
 }
