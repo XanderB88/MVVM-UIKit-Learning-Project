@@ -7,7 +7,6 @@
 
 import Foundation
 
-
 protocol TableViewCellViewModelType: AnyObject {
     
     var fullName: String { get }

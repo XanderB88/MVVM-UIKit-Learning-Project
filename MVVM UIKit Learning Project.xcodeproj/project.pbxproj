@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		11666099271CE6D2009FC70B /* TableViewCellViewModelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11666098271CE6D2009FC70B /* TableViewCellViewModelType.swift */; };
 		1166609B271CE8F3009FC70B /* TableViewCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1166609A271CE8F3009FC70B /* TableViewCellViewModel.swift */; };
+		1166609D271CF7A5009FC70B /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1166609C271CF7A5009FC70B /* DetailViewController.swift */; };
+		1166609F271CFA29009FC70B /* DetailViewModelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1166609E271CFA29009FC70B /* DetailViewModelType.swift */; };
+		116660A1271CFA86009FC70B /* DetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 116660A0271CFA86009FC70B /* DetailViewModel.swift */; };
 		116CD8EB271B9E2E0007C820 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 116CD8EA271B9E2E0007C820 /* AppDelegate.swift */; };
 		116CD8ED271B9E2E0007C820 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 116CD8EC271B9E2E0007C820 /* SceneDelegate.swift */; };
 		116CD8F2271B9E2E0007C820 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 116CD8F0271B9E2E0007C820 /* Main.storyboard */; };
@@ -24,6 +27,9 @@
 /* Begin PBXFileReference section */
 		11666098271CE6D2009FC70B /* TableViewCellViewModelType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCellViewModelType.swift; sourceTree = "<group>"; };
 		1166609A271CE8F3009FC70B /* TableViewCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCellViewModel.swift; sourceTree = "<group>"; };
+		1166609C271CF7A5009FC70B /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		1166609E271CFA29009FC70B /* DetailViewModelType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewModelType.swift; sourceTree = "<group>"; };
+		116660A0271CFA86009FC70B /* DetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewModel.swift; sourceTree = "<group>"; };
 		116CD8E7271B9E2E0007C820 /* MVVM UIKit Learning Project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MVVM UIKit Learning Project.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		116CD8EA271B9E2E0007C820 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		116CD8EC271B9E2E0007C820 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -119,6 +125,7 @@
 			children = (
 				116CD901271BA5A80007C820 /* TableViewController.swift */,
 				116CD905271BB1600007C820 /* TableViewCell.swift */,
+				1166609C271CF7A5009FC70B /* DetailViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -128,6 +135,7 @@
 			children = (
 				116CD90B271BC2610007C820 /* TableViewViewModelType.swift */,
 				11666098271CE6D2009FC70B /* TableViewCellViewModelType.swift */,
+				1166609E271CFA29009FC70B /* DetailViewModelType.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -137,6 +145,7 @@
 			children = (
 				116CD909271BBDBF0007C820 /* TableViewViewModel.swift */,
 				1166609A271CE8F3009FC70B /* TableViewCellViewModel.swift */,
+				116660A0271CFA86009FC70B /* DetailViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -218,7 +227,10 @@
 				116CD904271BA6630007C820 /* Profile.swift in Sources */,
 				116CD902271BA5A80007C820 /* TableViewController.swift in Sources */,
 				116CD90C271BC2610007C820 /* TableViewViewModelType.swift in Sources */,
+				1166609F271CFA29009FC70B /* DetailViewModelType.swift in Sources */,
+				116660A1271CFA86009FC70B /* DetailViewModel.swift in Sources */,
 				1166609B271CE8F3009FC70B /* TableViewCellViewModel.swift in Sources */,
+				1166609D271CF7A5009FC70B /* DetailViewController.swift in Sources */,
 				116CD90A271BBDBF0007C820 /* TableViewViewModel.swift in Sources */,
 				116CD8ED271B9E2E0007C820 /* SceneDelegate.swift in Sources */,
 			);

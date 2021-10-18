@@ -7,7 +7,6 @@
 
 import Foundation
 
-
 class TableViewCellViewModel: TableViewCellViewModelType {
        
     private var profile: Profile
