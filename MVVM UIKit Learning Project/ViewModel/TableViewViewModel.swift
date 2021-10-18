@@ -7,7 +7,7 @@
 
 import Foundation
 
-class ViewModel: TableViewModelType {
+class ViewModel: TableViewViewModelType {
     
     var profiles = [
         Profile(name: "John", secondName: "Smith", age: 33),
@@ -15,8 +15,14 @@ class ViewModel: TableViewModelType {
         Profile(name: "Amma", secondName: "Richards", age: 18)
     ]
     
-    var numberOfRows: Int {
+    func numberOfRows() -> Int {
         return profiles.count
+    }
+    
+    func cellViewModel(forIndexPath indexPath: IndexPath) -> TableViewCellViewModelType? {
+        let profile = profiles[indexPath.row]
+        
+        return TableViewCellViewModel(profile: profile)
     }
     
 }

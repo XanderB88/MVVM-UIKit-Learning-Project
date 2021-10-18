@@ -10,7 +10,7 @@ import UIKit
 class TableViewController: UITableViewController {
     
     // MARK: - Properties
-    var viewModel: TableViewModelType?
+    var viewModel: TableViewViewModelType?
     
     // MARK: - Lifecycle
     override func viewDidLoad() {
@@ -22,20 +22,19 @@ class TableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return viewModel?.profiles.count ?? 0
+        return viewModel?.numberOfRows() ?? 0
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as? TableViewCell
         
-        guard let tableViewCell = cell,
-              let viewModel = viewModel else { return TableViewCell() }
+        guard let tableViewCell = cell, let viewModel = viewModel else { return TableViewCell() }
         
-        let profile = viewModel.profiles[indexPath.row]
+        let cellViewModel = viewModel.cellViewModel(forIndexPath: indexPath)
         
-        tableViewCell.fullNameLabel.text = "\(profile.name) \(profile.secondName)"
-        tableViewCell.ageLabel.text = String(profile.age)
+        tableViewCell.viewModel = cellViewModel
         
         return tableViewCell
     }
+    
 }
