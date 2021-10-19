@@ -22,6 +22,7 @@
 		116CD906271BB1600007C820 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 116CD905271BB1600007C820 /* TableViewCell.swift */; };
 		116CD90A271BBDBF0007C820 /* TableViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 116CD909271BBDBF0007C820 /* TableViewViewModel.swift */; };
 		116CD90C271BC2610007C820 /* TableViewViewModelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 116CD90B271BC2610007C820 /* TableViewViewModelType.swift */; };
+		1173BA23271E3BA80078EF2D /* Box.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1173BA22271E3BA80078EF2D /* Box.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +43,7 @@
 		116CD905271BB1600007C820 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		116CD909271BBDBF0007C820 /* TableViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewViewModel.swift; sourceTree = "<group>"; };
 		116CD90B271BC2610007C820 /* TableViewViewModelType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewViewModelType.swift; sourceTree = "<group>"; };
+		1173BA22271E3BA80078EF2D /* Box.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Box.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +83,7 @@
 				116CD907271BBD370007C820 /* Model */,
 				116CD900271BA50A0007C820 /* IBuilders */,
 				116CD8FF271BA4900007C820 /* Supporting Files */,
+				1173BA22271E3BA80078EF2D /* Box.swift */,
 			);
 			path = "MVVM UIKit Learning Project";
 			sourceTree = "<group>";
@@ -227,6 +230,7 @@
 				116CD904271BA6630007C820 /* Profile.swift in Sources */,
 				116CD902271BA5A80007C820 /* TableViewController.swift in Sources */,
 				116CD90C271BC2610007C820 /* TableViewViewModelType.swift in Sources */,
+				1173BA23271E3BA80078EF2D /* Box.swift in Sources */,
 				1166609F271CFA29009FC70B /* DetailViewModelType.swift in Sources */,
 				116660A1271CFA86009FC70B /* DetailViewModel.swift in Sources */,
 				1166609B271CE8F3009FC70B /* TableViewCellViewModel.swift in Sources */,
